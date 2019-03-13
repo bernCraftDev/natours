@@ -1,0 +1,59 @@
+@keyframes moveInLeft {
+    0%
+
+    /* beginning of animation */
+        {
+        opacity: 0;
+        transform: translateX(-10rem);
+        /* on x axis, negative value means left side, just like maths */
+        /* BEST PRACTICE: for browser optimization, only use these two elements for animations */
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100%
+
+    /* end of animation */
+        {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0%
+
+    /* beginning of animation */
+        {
+        opacity: 0;
+        transform: translateX(10rem);
+        /* on x axis, positive value means right side, just like maths */
+        /* BEST PRACTICE: for browser optimization, only use these two elements for animations */
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100%
+
+    /* end of animation */
+        {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
